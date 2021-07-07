@@ -32,10 +32,10 @@ class Product {
             (unsuccessResponse) => { console.error('Une errur de chargement') }
         ).then((obj) => {
             console.log(obj);
-            this.loadValues(this.#id,obj.name,obj.price);
+            this.loadValues(this.#id, obj.name, obj.price);
             return obj;
         })
-      
+
     }
     /**
      * return id
@@ -70,10 +70,10 @@ class Product {
         return JSON.stringify(Object.assign({ name: this.#name, id: this.#id }, this));
     }
     makediscount = this.#_makeDiscount
-    loadBasicValues=(id,name,price)=>{
+    loadBasicValues = (id, name, price) => {
         this.#name = name;
         this.price = price;
-        this.#id=id;
+        this.#id = id;
     }
 }
 
@@ -91,15 +91,21 @@ class Boat extends Product {
     }
     #_loading() {
         const ressourceUrl = `http://${REST_BASE_URL}${Product.RESSOURCE_NAME}/${this.id}`
-        const promise = fetch(ressourceUrl);
+        const promise = fetch(ressourceUrl,
+            {
+                const: 'GET',
+                header: {
+                    "Content-Type": "application/json"
+                }
+            });
         promise.then(
             (response) => { return response.json() },
-            (unsuccessResponse) => { console.error('Une errur de chargement',unsuccessResponse) }
+            (unsuccessResponse) => { console.error('Une errur de chargement', unsuccessResponse) }
         ).then((obj) => {
             console.log(obj);
-            
-            this.loadBasicValues(this.id,obj.name,obj.price);
-            this.#_dimensions=obj.dimensions
+
+            this.loadBasicValues(this.id, obj.name, obj.price);
+            this.#_dimensions = obj.dimensions
             return obj;
         })
     }
