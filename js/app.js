@@ -1,4 +1,5 @@
 'use strict';
+
 var json_products = '[{"name":"zodiac","img":"https://picsum.photos/id/377/150/150","price":50000,"description":"Tempor duis culpa deserunt reprehenderit id officia deserunt laborum fugiat in et aute.","stock":3,"dimensions":[{"size":"40 pieds"},{"tons":"40 tonneaux"},{"speed":"40 noeuds"}]},{"name":"voilier","img":"https://picsum.photos/id/341/150/150", "price":2500000,"description":"Aliqua proident ea non fugiat. Reprehenderit pariatur pariatur ad aliqua pariatur consequat tempor. Aliqua velit amet quis laborum labore ea. Ea nisi mollit exercitation adipisicing mollit ullamco. Laboris Lorem sint enim nostrud adipisicing ex consequat cillum magna non occaecat. Anim nostrud velit magna minim in ad labore ipsum irure enim laboris sint laboris.","stock":3,"dimensions":[{"size":"25 pieds"},{"tons":"35 tonneaux"},{"speed":"25 noeuds"}]}]';
 var products = JSON.parse(json_products);
 console.log(products);

@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "lite-server"
+    "start": "lite-server",
+    "json": "json-server -p 5679 db/db.json"
   },
   "dependencies": {
     "lite-server": "^2.6.1",
@@ -22,6 +23,8 @@
   "bugs": {
     "url": "https://github.com/lbrennet/2021-07-06-jpg/issues"
   },
-  "homepage": "https://github.com/lbrennet/2021-07-06-jpg#readme"
-
+  "homepage": "https://github.com/lbrennet/2021-07-06-jpg#readme",
+  "devDependencies": {
+    "json-server": "^0.16.3"
+  }
 }
