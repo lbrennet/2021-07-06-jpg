@@ -1,4 +1,8 @@
-class Fecth {
+export const BASE_SRV_URL='http://localhost:5679'
+export const RESOURCES=Object.freeze({products:'/products',categories:'/categories'});
+
+// es6 on exporte la class
+export default class Fetch {
     #baseurl;
     constructor(baseUrl) {
         this.#baseurl = baseUrl;
