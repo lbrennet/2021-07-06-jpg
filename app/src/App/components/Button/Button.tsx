@@ -23,6 +23,7 @@ const Button = (props:ButtonProps) => {
                 console.log(evt);
                 props.clickEvt(props.text);
             }}
+            data-test-id="MonButton"
         >{props.text}</button>
     );
 };

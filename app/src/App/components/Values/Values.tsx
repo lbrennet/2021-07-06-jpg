@@ -11,7 +11,8 @@ interface Props {
 
 export const Values: React.FunctionComponent<Props> = props => {
   return <>  {/* balise vide react utilisee pour wrapper tout le flux en dessous dans une seule balise */}
-    <div className={styles.ValuesForm}>
+    <div className={styles.ValuesForm} data-testid="ValuesForm">
+      
       <form onSubmit={(evt) => {
         evt.preventDefault()
         console.log(evt)
@@ -25,7 +26,7 @@ export const Values: React.FunctionComponent<Props> = props => {
         <SubmitButton backColor="red"><img src="https://cdn0.iconfinder.com/data/icons/small-n-flat/24/678092-sign-add-256.png" alt="icon+" style={{width:'32px'}}/>Ajouter</SubmitButton>
       </form>
     </div>
-    <div className={styles.ValuesViewer}>
+    <div className={styles.ValuesViewer} data-testid="ValuesViewer">
       <h2>Resultats</h2>
       <table>
         <thead>
