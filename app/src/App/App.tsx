@@ -8,8 +8,8 @@ function App() {
     <div className="App">
       <h1>Voici mon button</h1>
       <Button text="Une valeur" backColor="cyan"/>
-      <Button text="Une autre valeur" backColor="tomato"/>
-      <Button text="Une autre autre valeur" backColor="green"/>
+      <Button text="Une autre valeur" backColor="tomato" style={{textDecoration: 'underline green', fontFamily: 'cursive'}}/>
+      <Button text="Une autre autre valeur" />
     </div>
   );
 }
