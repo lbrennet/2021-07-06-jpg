@@ -1,17 +1,12 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Button from './components/Button/Button';
+import React from 'react'
 
-function App() {
-  return (
-    <div className="App">
-      <h1>Voici mon button</h1>
-      <Button text="Une valeur" backColor="cyan"/>
-      <Button text="Une autre valeur" backColor="tomato" style={{textDecoration: 'underline green', fontFamily: 'cursive'}}/>
-      <Button text="Une autre autre valeur" />
-    </div>
-  );
+interface Props { }
+
+export default class App extends React.Component<Props, {}> {
+  constructor(props: Props) {
+    super(props);
+  }
+  render() {
+    return (null);
+  }
 }
-
-export default App;
