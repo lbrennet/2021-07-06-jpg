@@ -30,9 +30,9 @@ export const Values: React.FunctionComponent<Props> = props => {
         <tbody>
           {
             props.values.map((value, index, array) => {
-              return <tr><td>{value}</td><td>delete</td></tr>
+              return <tr key={`tab-val-${index}`}><td>{value}</td><td>delete</td></tr>
             })
-          }         
+          }
         </tbody>
       </table>
     </div>
