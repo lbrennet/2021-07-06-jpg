@@ -25,3 +25,6 @@ generate-react-cli : pour eviter le copy/paste pour dev un nouveau composant. ge
 react-story-book : pour creer un catalogue de composants avec exemple visuels etc
 
 tips: pas plus d'environ 30 lignes pour un component react
+
+create react app -> tool pour creer une app
+create react lib -> tool pour creer un lib 

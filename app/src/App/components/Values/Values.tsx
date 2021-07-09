@@ -1,5 +1,7 @@
 import React from 'react';
-import Button from '../Button/Button';
+import styles from './Values.module.css'
+import SubmitButton from '../SubmitButton/SubmitButton'
+
 
 interface Props {
   values: Array<number>
@@ -9,16 +11,21 @@ interface Props {
 
 export const Values: React.FunctionComponent<Props> = props => {
   return <>  {/* balise vide react utilisee pour wrapper tout le flux en dessous dans une seule balise */}
-    <div>
+    <div className={styles.ValuesForm}>
       <form onSubmit={(evt) => {
+        evt.preventDefault()
         console.log(evt)
-        props.addValue(0)
+        const target = evt.target as typeof evt.target & {
+          inputValueToAdd: { value: number }
+        };
+        props.addValue(target.inputValueToAdd.value);
       }}>
-        <input type="number" />
-        <button type="submit">Ajouter valeur</button>
+        <input type="number" name="inputValueToAdd" />
+        {/* <button type="submit">Ajouter valeur</button> */}
+        <SubmitButton backColor="red"><img src="https://cdn0.iconfinder.com/data/icons/small-n-flat/24/678092-sign-add-256.png" style={{width:'32px'}}/>Ajouter</SubmitButton>
       </form>
     </div>
-    <div>
+    <div className={styles.ValuesViewer}>
       <h2>Resultats</h2>
       <table>
         <thead>
