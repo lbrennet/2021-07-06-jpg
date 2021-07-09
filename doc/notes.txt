@@ -12,7 +12,15 @@ npm i -g lite-server ==> install en global, visible par tous les projets
 
 es6 : const et let es5: var uniquement
 
-devdocs site de docs
+https://devdocs.io/ site de docs
+
+https://regex101.com/ tout sur les regex
+
+https://www.w3schools.com/ les events
+
+https://www.npmjs.com/
+
+https://developer.mozilla.org/
 
 
 
