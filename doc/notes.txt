@@ -1,3 +1,25 @@
+npm i -s lite-server
+
+npm init -y ==> init repo
+
+npm i -s lite-server  ==> en dependance du projet (s = save)
+
+npm i -g lite-server ==> install en global, visible par tous les projets
+
+
+
+- react developper tools
+
+es6 : const et let es5: var uniquement
+
+devdocs site de docs
+
+
+
+
+
+
+
 generate-react-cli : pour eviter le copy/paste pour dev un nouveau composant. genere du boilerplate a partir de params
 
 react-story-book : pour creer un catalogue de composants avec exemple visuels etc
