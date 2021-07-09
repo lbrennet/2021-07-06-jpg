@@ -22,7 +22,7 @@ export const Values: React.FunctionComponent<Props> = props => {
       }}>
         <input type="number" name="inputValueToAdd" />
         {/* <button type="submit">Ajouter valeur</button> */}
-        <SubmitButton backColor="red"><img src="https://cdn0.iconfinder.com/data/icons/small-n-flat/24/678092-sign-add-256.png" style={{width:'32px'}}/>Ajouter</SubmitButton>
+        <SubmitButton backColor="red"><img src="https://cdn0.iconfinder.com/data/icons/small-n-flat/24/678092-sign-add-256.png" alt="icon+" style={{width:'32px'}}/>Ajouter</SubmitButton>
       </form>
     </div>
     <div className={styles.ValuesViewer}>

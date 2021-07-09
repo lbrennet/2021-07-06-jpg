@@ -1,0 +1,15 @@
+.mon-button{
+    /* background-color: tomato; */
+    border:none;
+    color: white;
+    font-size: 32pt;
+    font-weight: 900;
+    padding : 5px 10px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 25px grey;
+    margin:10px 20px ;
+}
+.mon-button:hover{
+    box-shadow: 5px 5px 15px grey;
+
+}

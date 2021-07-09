@@ -20,7 +20,7 @@ export default class App extends React.Component<Props, {}> {
           console.log('add value' + index);
           // on ne mute pas le state, on passe un nouveau tableau constitué de l'ancien + nouvel element
           // on ne fait pas de state = qqchose non plus
-          this.setState({ values: [...this.state.values, index] })
+          this.setState({ values: [...this.state.values, Number(index)] }) // on caste en number parce que le submit envoie du texte
         }}
         deleteValue={(index: number) => {
           console.log('delete value')
